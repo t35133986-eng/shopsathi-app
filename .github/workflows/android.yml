@@ -22,12 +22,15 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Capacitor
+      - name: Build Web App
+        run: npm run build
+
+      - name: Sync Capacitor
         run: npx cap sync android
 
       - name: Give permission
