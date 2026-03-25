@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -27,16 +27,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Sync Capacitor
+      - name: Build Capacitor
         run: npx cap sync android
 
       - name: Give permission
         run: chmod +x android/gradlew
 
-      - name: Build APK (with logs)
+      - name: Build APK
         run: |
           cd android
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
