@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Shop Sathi</string>
+    <string name="title_activity_main">Shop Sathi</string>
+    <string name="package_name">com.shopsathi.app</string>
+    <string name="custom_url_scheme">com.shopsathi.app</string>
+</resources>

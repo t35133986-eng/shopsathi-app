@@ -1,0 +1,8 @@
+{
+  "appId": "com.shopsathi.app",
+  "appName": "Shop Sathi",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
